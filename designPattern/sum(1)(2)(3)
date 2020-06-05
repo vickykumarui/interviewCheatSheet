@@ -1,0 +1,17 @@
+function sum(a){
+    
+  var sum = 0;
+  if(!a){
+      return sum
+  } else{
+      sum = sum +a;
+  }
+
+  return function inner(b){
+      if(b){
+          sum = sum + b;
+          return inner;
+      }
+      return sum;
+  }
+}

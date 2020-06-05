@@ -1,0 +1,38 @@
+/*
+This is nonSingelton everytine we create object we get seperate copy 
+
+*/
+
+function nonSingelton(){
+    this.count = 0;
+    this.incrementCount = function(){
+        this.count++;
+    }
+}
+
+/*
+singelton pattern
+*/
+
+var singelton = (function(){
+    
+    var singeltonObj;
+    function singeltonClass(){
+        this.count = 0;
+        this.incrementCount = function(){
+            this.count++;
+        }
+    } 
+
+    return {
+        singeltonService: function(){
+                  
+                  if(singeltonObj){
+                     return singeltonObj; 
+                  }  
+                  singeltonObj = new singeltonClass()
+                  return singeltonObj;
+        }
+    }
+    
+})()

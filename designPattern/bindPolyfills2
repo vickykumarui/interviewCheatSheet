@@ -1,0 +1,18 @@
+const obj5 = {
+    name: 'vicky',
+    lastName: 'kumar'
+}
+
+
+function print(freindName){
+    console.log(`${this.name} ${this.lastName} is friend of ${freindName}`)
+}
+
+Function.prototype.customBind = function(...args){
+    const thisfn = this;
+    const passedObj = args[0];
+    const restParams = args.slice(1)
+    return function inner(...args1){
+        thisfn.call(passedObj,[...restParams, ...args1]);
+    }
+}

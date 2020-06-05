@@ -1,0 +1,57 @@
+class Node{
+    constructor(val){
+        this.value  = val;
+        this.next = null;
+    }
+}
+
+class LinkedList{
+    constructor(){
+        this.length = 0;
+        this.end = this.start = null;
+       
+    }
+     findIntersection(L2){
+        let matchFound = -1;
+        console.log(this);
+        console.log(L2);
+        let curr = this.start;
+       
+        while(curr){
+            
+             let curr2 = L2.start;
+            while(curr2){
+                if(curr.value === curr2.value){
+                    matchFound = curr;
+                    break;
+                }
+                curr2 = curr2.next;
+            }
+            curr = curr.next;
+        }
+
+        return matchFound;
+    }
+
+    printLL(){
+        let currNode = this.start;
+        while(currNode){
+            console.log(currNode.value)
+            currNode = currNode.next;
+        }
+    }
+    addNode(val){
+        const newNode = new Node(val);
+        this.length++;
+        if(!this.start){
+            this.start = newNode;
+            this.end = newNode;
+            return;
+        }
+
+        this.end.next = newNode;
+        this.end = newNode;
+    }
+
+   
+}

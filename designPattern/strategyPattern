@@ -1,0 +1,47 @@
+/*
+It is a pattern in which we group closely related algorithm together and build strategy which on to use
+For example 
+we have multiple implementation of same function, and we want to have strategy to which one to use
+*/
+
+function fedex(){
+
+    this.calculate = ()=>{
+        return 2.5
+    }
+}
+
+function lending(){
+
+    this.calculate = ()=>{
+        return 2.5
+    }
+}
+
+function flip(){
+
+    this.calculate = ()=>{
+        return 2.5
+    }
+}
+
+
+function implements(){
+
+    this.company = "";
+    
+    this.setStrategy = (company) =>{
+        this.company = company;
+    }
+
+    this.implement = () =>{
+        return this.company.calculate;
+    }
+}
+
+var fedexObj = new fedex();
+    
+var implementsObj = new implements()
+implementsObj.setStrategy(fedexObj);
+implementsObj.implement.calculate();
+const lendingObj = new lending();

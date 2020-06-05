@@ -1,0 +1,21 @@
+let vicky = {
+    firstname: 'vicky',
+    lastName: 'kumar'
+}
+
+
+    function printName(){
+        console.log(`${this.firstname} ${this.lastName}`);
+    }
+
+
+// var printNam = printName.bind(vicky);
+
+Function.prototype.customBind = function(...args){
+    var obj = this;
+    return function innerFunction(...args){
+        obj.call(args[0])
+    }
+} 
+
+var printNam = printName.customBind(vicky);

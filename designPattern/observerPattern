@@ -1,0 +1,49 @@
+/*
+Observer pattern
+*/
+
+
+
+function subject(){
+    
+    this.observers = [];
+}
+
+subject.prototype.subscribe = function(fn) {
+        this.observers.push(fn);
+    }
+
+subject.prototype.unSubscribe = function(func) {
+         this.observers = this.observers.filter((fn) =>{
+             if(fn !== func){
+                 return true
+             } else{
+                 return false
+             }
+         })
+    }
+
+subject.prototype.fire = function(){
+
+        this.observers.forEach((fn) =>{
+            fn.call();
+        });        
+        
+
+    }
+   
+ var observer = function(){
+     console.log('observer called');
+ }
+
+  var observer1 = function(){
+     console.log('observer1 called');
+ }
+
+ var sub = new subject();
+ sub.subscribe(observer)
+ sub.subscribe(observer1)
+ console.log(sub)
+ sub.fire()
+ sub.unSubscribe(observer)
+ sub.fire()
