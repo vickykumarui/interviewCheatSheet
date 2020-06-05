@@ -1,0 +1,81 @@
+
+  website security(js/angular)  2 factor authentication - Done
+  website achitecture(js/angular) - Done
+  website performance(js/angular) lazy loading,aot,ivy engine, feature modules, no memory leak(make sure to remove all subscription on destroy) - Done
+  website design pattern(js/angular) mainly Observer pattern -Done
+  angular unit testing - Done
+	akshay saini videos - Done
+	pwa
+	service worker 
+	web worker
+	dynamic component
+	
+datastructure
+
+Write a function to get the intersection point of two Linked Lists.
+
+Gave a binary tree and told me to convert it to string without using JSON.stringify and convert it back to binary tree.
+
+
+What data structure and algorithm should be used while parsing and computing a string with an expressions in postfix (or prefix) notation?  
+======================================================================
+
+weakness
+i has always been instructed to go through requirement before start, till now i have never read requirement completelty if given as document
+i am very much happy if some one gives me this is jira story read and implement i have never been comfortable with document but always prefer jira
+
+i will not go to my manager and say that i want to work on this feature it looks exciting but  manager assign me any task i have never said no till now i will not come to manager that what i want 
+
+
+i have woked for five years did lot of implementation, but till now i have not designed atrchiteture of any application,
+i didn't responsibility where i will decide which tech stack to use 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==========================================
+
+
+
+why yuo want to leave company
+Because I was hitting saturation and it is good for me with these many years of experience to learn more and more. I believe I can achieve that working with you
+
